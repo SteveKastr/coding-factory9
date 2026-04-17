@@ -5,17 +5,19 @@ public class Product {
     private String name;
     private String description;
     private double price;
+    private int quantity;
     private boolean stock;
 
     public Product() {
 
     }
 
-    public Product(long id, String name, String description, double price, boolean stock) {
+    public Product(long id, String name, String description, double price, int quantity, boolean stock) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
+        this.quantity = quantity;
         this.stock = stock;
     }
 
@@ -49,6 +51,14 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
     public boolean isStock() {
