@@ -33,4 +33,9 @@ public class Point3D extends Point2D{
         super.movePlusOne();
         z += 10;
     }
+
+    @Override
+    public String toString() {
+        return "(" + getX() + ", " + getY() + ", " + z + ")";
+    }
 }
