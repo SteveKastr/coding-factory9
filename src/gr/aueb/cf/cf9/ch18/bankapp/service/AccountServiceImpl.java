@@ -80,6 +80,7 @@ public class AccountServiceImpl implements  IAccountService {
 
        } catch (AccountNotFoundException e) {
            System.err.printf("%s. The account with iban=%s was not found!\n", LocalDateTime.now(), iban);
+           System.err.flush();
            throw e;
        }
     }
